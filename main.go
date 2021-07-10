@@ -28,7 +28,7 @@ func homePage(w http.ResponseWriter, r *http.Request){
 }
 
 func returnUsers(w http.ResponseWriter, r *http.Request){
-	db, err := sql.Open("mysql", "root:tungkal01@tcp(127.0.0.1:3306)/belsql")
+	db, err := sql.Open("mysql", "username:passsword@tcp(127.0.0.1:3306)/belsql")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
